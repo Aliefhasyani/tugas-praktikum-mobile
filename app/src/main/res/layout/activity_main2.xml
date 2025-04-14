@@ -8,11 +8,14 @@
     android:background="@color/black"
     tools:context=".MainActivity2">
 
+
+
     <EditText
-        android:id="@+id/fullName"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter New Name"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,19 +24,38 @@
         app:layout_constraintBottom_toBottomOf="parent">
     </EditText>
 
-    <EditText
-        android:id="@+id/shortName"
+<!--    <EditText-->
+<!--        android:id="@+id/nickName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Enter Nickname Name"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/fullName"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginBottom="220dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+<!--    </EditText>-->
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/sendData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter Nickname"
-        android:textSize="30sp"
-        android:textColorHint="@color/white"
-        android:layout_marginBottom="180dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/fullName"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
-    </EditText>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        android:layout_marginBottom="160dp"
+        android:text="Send" />
 
 
 
